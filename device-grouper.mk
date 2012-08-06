@@ -3,7 +3,6 @@ LOCAL_PATH := jcrom/asus/grouper
 PRODUCT_PACKAGES += \
 	BrowserProviderProxy \
 	FaceLock \
-	Gmail \
 	GmsCore \
 	GoogleBackupTransport \
 	GoogleContactsSyncAdapter \
@@ -23,7 +22,6 @@ PRODUCT_PACKAGES += \
 	Talk \
 	Velvet \
 	VoiceSearchStub \
-	YouTube \
 	Books \
 	Chrome \
 	Currents \
@@ -42,6 +40,10 @@ PRODUCT_PACKAGES += \
 	iWnnIME_Kbd_White \
 	talkback \
 	SoundRecorder
+
+#	Gmail \
+#	YouTube \
+
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/bin/btmacreader:system/bin/btmacreader \
