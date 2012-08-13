@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
 	BrowserProviderProxy \
 	FaceLock \
 	GmsCore \
+    CalendarGoogle \
 	GoogleBackupTransport \
 	GoogleContactsSyncAdapter \
 	GoogleEars \
