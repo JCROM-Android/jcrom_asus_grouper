@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
 	PartnerBookmarksProvider \
 	SetupWizard \
 	Talk \
-	Velvet \
 	VoiceSearchStub \
 	Books \
 	Chrome \
@@ -42,6 +41,7 @@ PRODUCT_PACKAGES += \
 	talkback \
 	SoundRecorder
 
+#	Velvet \
 #	Gmail \
 #	YouTube \
 
