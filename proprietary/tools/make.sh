@@ -1,10 +1,10 @@
 #!/bin/sh
 
-tar zxf nakasi-jro03d-factory-e102ba72.tgz
-cd nakasi-jro03d
-unzip image-nakasi-jro03d.zip
+tar zxf nakasi-jzo54k-factory-973f190e.tgz
+cd nakasi-jzo54k
+unzip image-nakasi-jzo54k.zip
 cd ../
-./simg2img nakasi-jro03d/system.img system.ext4.img
+./simg2img nakasi-jzo54k/system.img system.ext4.img
 mkdir system
 sudo mount -o loop -t ext4 system.ext4.img system
 sync
@@ -52,6 +52,6 @@ done < ${ODEX_LIST}
 sudo umount system
 rmdir system
 rm -rf tmp
-rm -rf nakasi-jro03d
+rm -rf nakasi-jzo54k
 rm system.ext4.img
 

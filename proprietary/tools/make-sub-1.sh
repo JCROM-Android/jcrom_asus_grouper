@@ -2,13 +2,10 @@
 SRC_SYSTEM=system
 DST_SYSTEM=../system
 cp -a ${SRC_SYSTEM}/bin/btmacreader ${DST_SYSTEM}/bin/btmacreader
-cp -a ${SRC_SYSTEM}/bin/glgps ${DST_SYSTEM}/bin/glgps
 cp -a ${SRC_SYSTEM}/bin/sensors-config ${DST_SYSTEM}/bin/sensors-config
 cp -a ${SRC_SYSTEM}/bin/tf_daemon ${DST_SYSTEM}/bin/tf_daemon
 cp -a ${SRC_SYSTEM}/etc/apns-conf.xml ${DST_SYSTEM}/etc/apns-conf.xml
 cp -a ${SRC_SYSTEM}/etc/asound.conf ${DST_SYSTEM}/etc/asound.conf
-cp -a ${SRC_SYSTEM}/etc/firmware/touch_fw.ekt ${DST_SYSTEM}/etc/firmware/touch_fw.ekt
-cp -a ${SRC_SYSTEM}/etc/gps/gpsconfig.xml ${DST_SYSTEM}/etc/gps/gpsconfig.xml
 cp -a ${SRC_SYSTEM}/etc/permissions/com.google.android.maps.xml ${DST_SYSTEM}/etc/permissions/com.google.android.maps.xml
 cp -a ${SRC_SYSTEM}/etc/permissions/com.google.android.media.effects.xml ${DST_SYSTEM}/etc/permissions/com.google.android.media.effects.xml
 cp -a ${SRC_SYSTEM}/etc/permissions/com.google.widevine.software.drm.xml ${DST_SYSTEM}/etc/permissions/com.google.widevine.software.drm.xml
@@ -16,8 +13,6 @@ cp -a ${SRC_SYSTEM}/etc/permissions/features.xml ${DST_SYSTEM}/etc/permissions/f
 cp -a ${SRC_SYSTEM}/etc/preferred-apps/google.xml ${DST_SYSTEM}/etc/preferred-apps/google.xml
 cp -a ${SRC_SYSTEM}/etc/updatecmds/google_generic_update.txt ${DST_SYSTEM}/etc/updatecmds/google_generic_update.txt
 cp -a ${SRC_SYSTEM}/lib/hw/camera.tegra3.so ${DST_SYSTEM}/lib/hw/camera.tegra3.so
-cp -a ${SRC_SYSTEM}/lib/hw/gps.tegra3.so ${DST_SYSTEM}/lib/hw/gps.tegra3.so
-cp -a ${SRC_SYSTEM}/lib/hw/keystore.grouper.so ${DST_SYSTEM}/lib/hw/keystore.grouper.so
 cp -a ${SRC_SYSTEM}/lib/hw/sensors.grouper.so ${DST_SYSTEM}/lib/hw/sensors.grouper.so
 cp -a ${SRC_SYSTEM}/lib/libEnjemailuri.so ${DST_SYSTEM}/lib/libEnjemailuri.so
 cp -a ${SRC_SYSTEM}/lib/lib_dic_en_USUK.conf.so ${DST_SYSTEM}/lib/lib_dic_en_USUK.conf.so
@@ -99,7 +94,6 @@ cp -a ${SRC_SYSTEM}/usr/srec/en-US/symbols ${DST_SYSTEM}/usr/srec/en-US/symbols
 cp -a ${SRC_SYSTEM}/usr/srec/en-US/dict ${DST_SYSTEM}/usr/srec/en-US/dict
 cp -a ${SRC_SYSTEM}/usr/srec/en-US/endpointer_dictation.config ${DST_SYSTEM}/usr/srec/en-US/endpointer_dictation.config
 cp -a ${SRC_SYSTEM}/usr/srec/en-US/google_hotword_logistic ${DST_SYSTEM}/usr/srec/en-US/google_hotword_logistic
-cp -a ${SRC_SYSTEM}/vendor/firmware/libpn544_fw.so ${DST_SYSTEM}/vendor/firmware/libpn544_fw.so
 cp -a ${SRC_SYSTEM}/vendor/lib/drm/libdrmwvmplugin.so ${DST_SYSTEM}/vendor/lib/drm/libdrmwvmplugin.so
 cp -a ${SRC_SYSTEM}/vendor/lib/libwvm.so ${DST_SYSTEM}/vendor/lib/libwvm.so
 cp -a ${SRC_SYSTEM}/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin ${DST_SYSTEM}/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin

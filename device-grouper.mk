@@ -48,13 +48,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/bin/btmacreader:system/bin/btmacreader \
-	$(LOCAL_PATH)/proprietary/system/bin/glgps:system/bin/glgps \
 	$(LOCAL_PATH)/proprietary/system/bin/sensors-config:system/bin/sensors-config \
 	$(LOCAL_PATH)/proprietary/system/bin/tf_daemon:system/bin/tf_daemon \
 	$(LOCAL_PATH)/proprietary/system/etc/apns-conf.xml:system/etc/apns-conf.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/asound.conf:system/etc/asound.conf \
-	$(LOCAL_PATH)/proprietary/system/etc/firmware/touch_fw.ekt:system/etc/firmware/touch_fw.ekt \
-	$(LOCAL_PATH)/proprietary/system/etc/gps/gpsconfig.xml:system/etc/gps/gpsconfig.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
 	$(LOCAL_PATH)/proprietary/system/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
@@ -65,8 +62,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
 	$(LOCAL_PATH)/proprietary/system/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
 	$(LOCAL_PATH)/proprietary/system/lib/hw/camera.tegra3.so:system/lib/hw/camera.tegra3.so \
-	$(LOCAL_PATH)/proprietary/system/lib/hw/gps.tegra3.so:system/lib/hw/gps.tegra3.so \
-	$(LOCAL_PATH)/proprietary/system/lib/hw/keystore.grouper.so:system/lib/hw/keystore.grouper.so \
 	$(LOCAL_PATH)/proprietary/system/lib/hw/sensors.grouper.so:system/lib/hw/sensors.grouper.so \
 	$(LOCAL_PATH)/proprietary/system/lib/libEnjemailuri.so:system/lib/libEnjemailuri.so \
 	$(LOCAL_PATH)/proprietary/system/lib/lib_dic_en_USUK.conf.so:system/lib/lib_dic_en_USUK.conf.so \
@@ -148,7 +143,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/system/usr/srec/en-US/dict:system/usr/srec/en-US/dict \
 	$(LOCAL_PATH)/proprietary/system/usr/srec/en-US/endpointer_dictation.config:system/usr/srec/en-US/endpointer_dictation.config \
 	$(LOCAL_PATH)/proprietary/system/usr/srec/en-US/google_hotword_logistic:system/usr/srec/en-US/google_hotword_logistic \
-	$(LOCAL_PATH)/proprietary/system/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
 	$(LOCAL_PATH)/proprietary/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
 	$(LOCAL_PATH)/proprietary/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
 	$(LOCAL_PATH)/proprietary/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
