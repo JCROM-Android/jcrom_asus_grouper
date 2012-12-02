@@ -12,6 +12,7 @@ cp -a ${SRC_SYSTEM}/lib/hw/sensors.grouper.so ${DST_SYSTEM}/lib/hw/sensors.group
 cp -a ${SRC_SYSTEM}/lib/hw/keystore.grouper.so ${DST_SYSTEM}/lib/hw/keystore.grouper.so
 cp -a ${SRC_SYSTEM}/lib/libsensors.lightsensor.so ${DST_SYSTEM}/lib/libsensors.lightsensor.so
 cp -a ${SRC_SYSTEM}/lib/liblightcycle.so ${DST_SYSTEM}/lib/liblightcycle.so
+cp -a ${SRC_SYSTEM}/lib/libjni_mosaic.so ${DST_SYSTEM}/lib/libjni_mosaic.so
 cp -a ${SRC_SYSTEM}/media/LMprec_508.emd ${DST_SYSTEM}/media/LMprec_508.emd
 cp -a ${SRC_SYSTEM}/media/PFFprec_600.emd ${DST_SYSTEM}/media/PFFprec_600.emd
 cp -a ${SRC_SYSTEM}/media/bootanimation.zip ${DST_SYSTEM}/media/bootanimation.zip

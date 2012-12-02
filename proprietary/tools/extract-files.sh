@@ -1,4 +1,4 @@
 #!/bin/sh
-echo This may take about a few minutes.
+echo "Download and Deodexing... Please wait."
 bash ./make.sh  > log.txt 2>&1
 
