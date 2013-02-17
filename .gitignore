@@ -1,8 +1,10 @@
 proprietary/tools/nakasi-jop40c-factory-6aabb391.tgz
 proprietary/tools/nakasi-jop40d-factory-6ac58a1a.tgz
+proprietary/tools/nakasi-jdq39-factory-c317339e.tgz
 proprietary/tools/log.txt
 proprietary/system/lib/liblightcycle.so
 proprietary/system/lib/libsensors.lightsensor.so
+proprietary/system/lib/libgoggles_clientvision.so
 proprietary/system/lib/libjni_mosaic.so
 proprietary/system/lib/hw/camera.tegra3.so
 proprietary/system/lib/hw/keystore.grouper.so
