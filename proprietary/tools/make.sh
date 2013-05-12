@@ -11,7 +11,7 @@ sudo mount -o loop -t ext4 system.ext4.img system
 sync
 
 ./make-sub-1.sh
-./make-sub-2.sh
+#./make-sub-2.sh
 
 sudo umount system
 rmdir system
