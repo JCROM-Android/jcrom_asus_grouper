@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "Download and Deodexing... Please wait."
-wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-jwr66v-factory-d341d356.tgz
-tar zxf nakasi-jwr66v-factory-d341d356.tgz
-cd nakasi-jwr66v
-unzip image-nakasi-jwr66v.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-jwr66y-factory-1e503532.tgz
+tar zxf nakasi-jwr66y-factory-1e503532.tgz
+cd nakasi-jwr66y
+unzip image-nakasi-jwr66y.zip
 cd ../
-./simg2img nakasi-jwr66v/system.img system.ext4.img
+./simg2img nakasi-jwr66y/system.img system.ext4.img
 mkdir system
 mkdir tmp
 sudo mount -o loop -t ext4 system.ext4.img tmp
@@ -61,6 +61,6 @@ cp -a tmp/vendor/etc/audio_effects.conf system/vendor/etc/audio_effects.conf
 
 sudo umount tmp
 rm -rf tmp
-rm -rf nakasi-jwr66v
+rm -rf nakasi-jwr66y
 rm system.ext4.img
 
