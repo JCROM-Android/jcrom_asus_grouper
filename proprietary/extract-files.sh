@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "Download and Deodexing... Please wait."
-wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-krt16s-factory-da7dee49.tgz
-tar zxf nakasi-krt16s-factory-da7dee49.tgz
-cd nakasi-krt16s
-unzip image-nakasi-krt16s.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-kot49h-factory-5e9db5e1.tgz
+tar zxf nakasi-kot49h-factory-5e9db5e1.tgz
+cd nakasi-kot49h
+unzip image-nakasi-kot49h.zip
 cd ../
-./simg2img nakasi-krt16s/system.img system.ext4.img
+./simg2img nakasi-kot49h/system.img system.ext4.img
 mkdir system
 mkdir tmp
 sudo mount -o loop -t ext4 system.ext4.img tmp
@@ -31,6 +31,6 @@ cp -a tmp/media/bootanimation.zip system/media/bootanimation.zip
 
 sudo umount tmp
 rm -rf tmp
-rm -rf nakasi-krt16s
+rm -rf nakasi-kot49h
 rm system.ext4.img
 
