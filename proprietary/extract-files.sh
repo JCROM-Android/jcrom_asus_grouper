@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "Download and Deodexing... Please wait."
-wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-kot49h-factory-5e9db5e1.tgz
-tar zxf nakasi-kot49h-factory-5e9db5e1.tgz
-cd nakasi-kot49h
-unzip image-nakasi-kot49h.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-ktu84l-factory-0e21238f.tgz
+tar zxf nakasi-ktu84l-factory-0e21238f.tgz
+cd nakasi-ktu84l
+unzip image-nakasi-ktu84l.zip
 cd ../
-./simg2img nakasi-kot49h/system.img system.ext4.img
+./simg2img nakasi-ktu84l/system.img system.ext4.img
 mkdir system
 mkdir tmp
 sudo mount -o loop -t ext4 system.ext4.img tmp
@@ -27,10 +27,15 @@ cp -a tmp/bin/tf_daemon system/bin/tf_daemon
 cp -a tmp/etc/audio_effects.conf system/etc/audio_effects.conf
 cp -a tmp/etc/apns-conf.xml system/etc/apns-conf.xml
 cp -a tmp/lib/soundfx/libfmas.so system/lib/soundfx/libfmas.so
+cp -a tmp/lib/libgcastv2_base.so system/lib/libgcastv2_base.so
+cp -a tmp/lib/libgcastv2_support.so system/lib/libgcastv2_support.so
+cp -a tmp/lib/libjgcastservice.so system/lib/libjgcastservice.so
+cp -a tmp/lib/libjhead.so system/lib/libjhead.so
+cp -a tmp/lib/libjhead_jni.so system/lib/libjhead_jni.so
 cp -a tmp/media/bootanimation.zip system/media/bootanimation.zip
 
 sudo umount tmp
 rm -rf tmp
-rm -rf nakasi-kot49h
+rm -rf nakasi-ktu84l
 rm system.ext4.img
 
