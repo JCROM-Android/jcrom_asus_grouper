@@ -1,23 +1,30 @@
 #!/bin/bash
 echo "Please wait."
-wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-76acdbe9.tgz
-tar zxf nakasi-ktu84p-factory-76acdbe9.tgz
-cd nakasi-ktu84p
-unzip image-nakasi-ktu84p.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-lrx21p-factory-93daa4d3.tgz
+tar zxf nakasi-lrx21p-factory-93daa4d3.tgz
+rm nakasi-lrx21p-factory-93daa4d3.tgz
+cd nakasi-lrx21p
+unzip image-nakasi-lrx21p.zip
 cd ../
-./simg2img nakasi-ktu84p/system.img system.ext4.img
+./simg2img nakasi-lrx21p/system.img system.ext4.img
 mkdir system
 mkdir tmp
 sudo mount -o loop -t ext4 system.ext4.img tmp
 sync
+mkdir -p system/etc/preferred-apps
+mkdir -p system/etc/sysconfig
+mkdir -p system/etc/updatecmds
 mkdir -p system/bin
-mkdir -p system/etc
 mkdir -p system/lib/soundfx
 mkdir -p system/media
 mkdir -p system/vendor/media
 mkdir -p system/vendor/lib/mediadrm
 mkdir -p system/vendor/etc
 
+cp -a tmp/etc/preferred-apps/google.xml system/etc/preferred-apps/google.xml
+cp -a tmp/etc/sysconfig/google.xml system/etc/sysconfig/google.xml
+cp -a tmp/etc/sysconfig/google_build.xml system/etc/sysconfig/google_build.xml
+cp -a tmp/etc/updatecmds/google_generic_update.txt system/etc/updatecmds/google_generic_update.txt
 cp -a tmp/vendor/etc/audio_effects.conf system/vendor/etc/audio_effects.conf
 cp -a tmp/vendor/lib/mediadrm/libwvdrmengine.so system/vendor/lib/mediadrm/libwvdrmengine.so
 cp -a tmp/vendor/lib/libfrsdk.so system/vendor/lib/libfrsdk.so
@@ -27,15 +34,15 @@ cp -a tmp/bin/tf_daemon system/bin/tf_daemon
 cp -a tmp/etc/audio_effects.conf system/etc/audio_effects.conf
 cp -a tmp/etc/apns-conf.xml system/etc/apns-conf.xml
 cp -a tmp/lib/soundfx/libfmas.so system/lib/soundfx/libfmas.so
-cp -a tmp/lib/libgcastv2_base.so system/lib/libgcastv2_base.so
-cp -a tmp/lib/libgcastv2_support.so system/lib/libgcastv2_support.so
-cp -a tmp/lib/libjgcastservice.so system/lib/libjgcastservice.so
 cp -a tmp/lib/libjhead.so system/lib/libjhead.so
 cp -a tmp/lib/libjhead_jni.so system/lib/libjhead_jni.so
+cp -a tmp/lib/librefocus.so system/lib/librefocus.so
+cp -a tmp/lib/libvcdecoder_jni.so system/lib/libvcdecoder_jni.so
+cp -a tmp/lib/libvorbisencoder.so system/lib/libvorbisencoder.so
 cp -a tmp/media/bootanimation.zip system/media/bootanimation.zip
 
 sudo umount tmp
 rm -rf tmp
-rm -rf nakasi-ktu84p
+rm -rf nakasi-lrx21p
 rm system.ext4.img
 
