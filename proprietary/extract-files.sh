@@ -1,12 +1,12 @@
 #!/bin/bash
 echo "Please wait."
-wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-lrx21p-factory-93daa4d3.tgz
-tar zxf nakasi-lrx21p-factory-93daa4d3.tgz
-rm nakasi-lrx21p-factory-93daa4d3.tgz
-cd nakasi-lrx21p
-unzip image-nakasi-lrx21p.zip
+wget -nc -q https://dl.google.com/dl/android/aosp/nakasi-lrx22g-factory-2291c36b.tgz
+tar zxf nakasi-lrx22g-factory-2291c36b.tgz
+rm nakasi-lrx22g-factory-2291c36b.tgz
+cd nakasi-lrx22g
+unzip image-nakasi-lrx22g.zip
 cd ../
-./simg2img nakasi-lrx21p/system.img system.ext4.img
+./simg2img nakasi-lrx22g/system.img system.ext4.img
 mkdir system
 mkdir tmp
 sudo mount -o loop -t ext4 system.ext4.img tmp
@@ -43,6 +43,6 @@ cp -a tmp/media/bootanimation.zip system/media/bootanimation.zip
 
 sudo umount tmp
 rm -rf tmp
-rm -rf nakasi-lrx21p
+rm -rf nakasi-lrx22g
 rm system.ext4.img
 
